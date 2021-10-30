@@ -1,0 +1,15 @@
+.single-service{
+    border: 3px solid goldenrod;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.single-service img{
+    width: 100%;
+}

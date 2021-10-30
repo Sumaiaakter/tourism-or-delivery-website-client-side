@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Canada",
+        "price": "300",
+        "description": "the activity or practice of touring, especially for pleasure. the business or industry of providing information, accommodations, transportation, and other services to tourists. the promotion of tourist travel, especially for commercial purposes.",
+        "img": "https://i.ibb.co/K61cCHC/Canada.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Copenhagen",
+        "price": "100",
+        "description": "the activity or practice of touring, especially for pleasure. the business or industry of providing information, accommodations, transportation, and other services to tourists. the promotion of tourist travel, especially for commercial purposes.",
+        "img": "https://i.ibb.co/C1GnZ02/Copenhagen.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Denmark",
+        "price": "150",
+        "description": "the activity or practice of touring, especially for pleasure. the business or industry of providing information, accommodations, transportation, and other services to tourists. the promotion of tourist travel, especially for commercial purposes.",
+        "img": "https://i.ibb.co/0sRq14g/Denmark.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Iceland",
+        "price": "180",
+        "description": "the activity or practice of touring, especially for pleasure. the business or industry of providing information, accommodations, transportation, and other services to tourists. the promotion of tourist travel, especially for commercial purposes.",
+        "img": "https://i.ibb.co/rx5R9ZQ/Iceland.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Iffel-Tower",
+        "price": "100",
+        "description": "the activity or practice of touring, especially for pleasure. the business or industry of providing information, accommodations, transportation, and other services to tourists. the promotion of tourist travel, especially for commercial purposes.",
+        "img": "https://i.ibb.co/MRT3J5W/Iffel-Tower.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Italy",
+        "price": "300",
+        "description": "the activity or practice of touring, especially for pleasure. the business or industry of providing information, accommodations, transportation, and other services to tourists. the promotion of tourist travel, especially for commercial purposes.",
+        "img": "https://i.ibb.co/pRq2sC3/Italy.jpg"
+    }
+]
