@@ -8,22 +8,22 @@ const Booking = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch(`/tourists.json`)
+        fetch(`http://localhost:5000/places/${serviceId}`)
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
 
-    const service = data.filter(dt => dt.id == serviceId);
+    // const service = data.filter(dt => dt._id == serviceId);
 
     return (
         <div className="container">
-
-            <div className="single-service">
-                {/* <h2>{serviceId}</h2> */}
-                <img width="60%" src={service[0]?.img} alt="" />
-                <h2>{service[0]?.name}</h2>
-                <p>{service[0]?.experience}</p>
-                <p>{service[0]?.description}</p>
+            <h2 className="text-center text-primary">Your Booking Details</h2>
+            <div className="single-service m-5">
+                <h2 className="text-center">Booking id : {serviceId}</h2>
+                <img width="60%" src={data.image} alt="" />
+                <h2 className="text-center">{data.title}</h2>
+                <p className="text-center">{data.date}</p>
+                <p className="text-center">{data.description}</p>
             </div>
 
         </div>

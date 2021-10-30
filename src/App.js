@@ -3,15 +3,21 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import About from './components/About/About';
+import AddPlaces from './components/AddPlaces/AddPlaces';
 import AddService from './components/AddService/AddService';
+
+import AdminDashboard from './components/Admin/AdminDashboard/AdminDashboard';
 import Booking from './components/Booking/Booking';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import ManageServices from './components/ManageServices/ManageServices';
 import NotFound from './components/NotFound/NotFound';
 import Services from './components/Services/Services';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Route/PrivateRoute';
+import AllTourists from './components/Admin/AllTourists/AllTourists';
+import AddTourist from './components/AddTourist/AddTourist';
 
 
 function App() {
@@ -42,6 +48,24 @@ function App() {
             <Route exact path="/addService">
               <AddService></AddService>
             </Route>
+            <Route exact path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
+
+            <Route exact path="/addPlaces">
+              <AddPlaces></AddPlaces>
+            </Route>
+            <PrivateRoute exact path="/adminDashboard">
+              <AdminDashboard></AdminDashboard>
+            </PrivateRoute>
+            <Route exact path="/registerTourist">
+              <AddTourist></AddTourist>
+            </Route>
+            {/* <Route exact path="/registerTourist">
+              <AllTourists></AllTourists>
+            </Route> */}
+
+
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>
