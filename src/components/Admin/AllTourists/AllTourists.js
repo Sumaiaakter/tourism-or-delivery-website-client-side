@@ -6,7 +6,7 @@ const AllTourists = () => {
     const [tourist, setTourist] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/allTourists")
+        fetch("https://still-stream-37709.herokuapp.com/allTourists")
             .then((res) => res.json())
             .then((data) => setTourist(data));
     }, []);
