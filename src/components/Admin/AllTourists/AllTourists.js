@@ -55,7 +55,7 @@ const AllTourists = () => {
                             <td>{pd?.name}</td>
                             <td>{pd?.email}</td>
                             <td>{pd?.date}</td>
-                            <button className="btn bg-danger p-2" onclick={() => handleDelete(tourist._id)}>Delete</button>
+                            <button className="btn bg-warning p-2" onclick={() => handleDelete(tourist._id)}>Delete</button>
                         </tr>
                     </tbody>
                 ))}

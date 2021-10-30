@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 import './ManageServices.css'
 const ManageServices = () => {
 
@@ -29,6 +30,38 @@ const ManageServices = () => {
     return (
         <div className="container">
             <div>
+                <h1>Services Items: {services?.length}</h1>
+                <Table striped bordered hover>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Event Title</th>
+                            <th>Event description</th>
+                            <th>Image Link</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    {services?.map((pd, index) => (
+                        <tbody>
+                            <tr>
+                                <td>{index}</td>
+                                <td>{pd.title}</td>
+                                <td>{pd.description}</td>
+                                <td>{pd.image}</td>
+                                <button className="btn btn-primary" onClick={() => handleDelete(pd._id)}>Delete</button>
+                            </tr>
+                        </tbody>
+                    ))}
+                </Table>
+            </div>
+
+
+
+
+
+
+            {/* <div>
                 <h2 className="text-center">manage</h2>
 
                 <div className="service-container container">
@@ -40,7 +73,7 @@ const ManageServices = () => {
                     }
 
                 </div>
-            </div>
+            </div> */}
         </div >
     );
 };

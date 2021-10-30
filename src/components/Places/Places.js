@@ -13,29 +13,32 @@ const Places = () => {
 
     return (
         <div className="container">
-            <h1>Places: {place?.length}</h1>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Event Title</th>
-                        <th>Event description</th>
-                        <th>Image Link</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                {place?.map((pd, index) => (
-                    <tbody>
+            <div>
+                <h1>Manage Tourist Items: {place?.length}</h1>
+                <Table striped bordered hover>
+
+                    <thead>
                         <tr>
-                            <td>{index}</td>
-                            <td>{pd.title}</td>
-                            <td>{pd.description}</td>
-                            <td>{pd.image}</td>
-                            <button className="btn bg-danger p-2">Delete</button>
+                            <th>#</th>
+                            <th>Event Title</th>
+                            <th>Event description</th>
+                            <th>Image Link</th>
+                            <th>Action</th>
                         </tr>
-                    </tbody>
-                ))}
-            </Table>
+                    </thead>
+                    {place?.map((pd, index) => (
+                        <tbody>
+                            <tr>
+                                <td>{index}</td>
+                                <td>{pd.title}</td>
+                                <td>{pd.description}</td>
+                                <td>{pd.image}</td>
+                                <button className="btn bg-danger p-2">Delete</button>
+                            </tr>
+                        </tbody>
+                    ))}
+                </Table>
+            </div>
         </div>
     );
 };

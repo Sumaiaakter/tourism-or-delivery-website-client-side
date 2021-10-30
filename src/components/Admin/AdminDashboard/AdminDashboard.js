@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddPlaces from '../../AddPlaces/AddPlaces';
+import ManageServices from '../../ManageServices/ManageServices';
 import Places from '../../Places/Places';
 import AllTourists from '../AllTourists/AllTourists';
 const AdminDashboard = () => {
@@ -26,10 +27,16 @@ const AdminDashboard = () => {
                                         Add Places
                                     </li>
                                     <li
+                                        onClick={() => setControl("manages")}
+                                        className="admin-menu p-2"
+                                    >
+                                        Manage Services
+                                    </li>
+                                    <li
                                         onClick={() => setControl("manage")}
                                         className="admin-menu p-2"
                                     >
-                                        Manage Places
+                                        Manage Tourist
                                     </li>
                                 </div>
                             </div>
@@ -37,6 +44,7 @@ const AdminDashboard = () => {
                         <div className="col-md-9 text-center  text-center">
                             <div className="right-part ">
                                 {control === "addPlaces" && <AddPlaces></AddPlaces>}
+                                {control === "manages" && <ManageServices></ManageServices>}
                                 {control === "manage" && <Places></Places>}
                                 {control === "tourists" && <AllTourists></AllTourists>}
                             </div>
