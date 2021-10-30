@@ -13,13 +13,13 @@ const AllTourists = () => {
     //--------------------------------//
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/tourist')
+        fetch('https://still-stream-37709.herokuapp.com/tourist')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/allTourists/${id}`;
+        const url = `https://still-stream-37709.herokuapp.com/allTourists/${id}`;
         fetch(url, {
             method: 'DELETE',
 

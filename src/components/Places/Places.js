@@ -5,7 +5,7 @@ import { Table } from 'react-bootstrap';
 const Places = () => {
     const [place, setPlace] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/places")
+        fetch("https://still-stream-37709.herokuapp.com/places")
             .then((response) => response.json())
             .then((data) => setPlace(data));
     }, []);

@@ -15,7 +15,7 @@ const AddTourist = () => {
 
     const onSubmit = (data) => {
         data.status = user?.email;
-        fetch("http://localhost:5000/addTourist", {
+        fetch("https://still-stream-37709.herokuapp.com/addTourist", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

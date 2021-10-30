@@ -5,7 +5,7 @@ import './Services.css';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://still-stream-37709.herokuapp.com/places')
             .then(res => res.json())
             .then(data => {
                 console.log(data)

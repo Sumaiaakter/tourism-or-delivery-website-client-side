@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddPlaces from '../../AddPlaces/AddPlaces';
+import Places from '../../Places/Places';
 import AllTourists from '../AllTourists/AllTourists';
 const AdminDashboard = () => {
     const [control, setControl] = useState("addPlaces");
@@ -36,7 +37,7 @@ const AdminDashboard = () => {
                         <div className="col-md-9 text-center  text-center">
                             <div className="right-part ">
                                 {control === "addPlaces" && <AddPlaces></AddPlaces>}
-                                {/* {control === "manage" && <Places></Places>} */}
+                                {control === "manage" && <Places></Places>}
                                 {control === "tourists" && <AllTourists></AllTourists>}
                             </div>
                         </div>

@@ -16,7 +16,7 @@ const AddService = () => {
 
 
         data.addEventEmail = user?.email;
-        fetch("http://localhost:5000/places", {
+        fetch("https://still-stream-37709.herokuapp.com/places", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

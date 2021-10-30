@@ -14,7 +14,7 @@ const AddPlaces = () => {
 
     const onSubmit = (data) => {
         data.addEventEmail = user?.email;
-        fetch("http://localhost:5000/addPlaces", {
+        fetch("https://still-stream-37709.herokuapp.com/addPlaces", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

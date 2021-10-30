@@ -4,13 +4,13 @@ const ManageServices = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://still-stream-37709.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/places/${id}`;
+        const url = `https://still-stream-37709.herokuapp.com/places/${id}`;
         fetch(url, {
             method: 'DELETE',
 

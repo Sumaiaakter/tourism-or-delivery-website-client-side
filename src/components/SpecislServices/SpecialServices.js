@@ -4,7 +4,7 @@ import SpecialService from '../SpecialService/SpecialService';
 const SpecialServices = () => {
     const [specialServices, setSpecialServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://still-stream-37709.herokuapp.com/places')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
