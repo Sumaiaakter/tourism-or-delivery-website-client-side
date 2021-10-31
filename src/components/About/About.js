@@ -22,12 +22,15 @@ const About = () => {
             </ul>
             <br /><br /><br />
             <hr />
+            <SpecialService></SpecialService>
+            <br /><br /><br />
+            <hr />
             <div>
                 <h2>The main purpose of your About Us page is to give your visitors a glimpse into who you are as a person or a business (or sometimes both).As users discover your brand, they need to distinguish what sets you apart and makes you… you.
 
                     This often requires finding the right balance between compelling content and a design carefully planned to look the part.</h2>
             </div>
-            {/* <SpecialService></SpecialService> */}
+
             <Footer></Footer>
         </div>
     )

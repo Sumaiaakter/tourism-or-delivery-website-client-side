@@ -12,7 +12,7 @@ const Service = ({ service }) => {
             <p className="px-3 text-center">{description}</p>
             <div className="btn text-center">
                 <Link to={`/booking/${_id}`} className="px-3 text-center">
-                    <button className="btn btn-warning text-center">Booking: {title}</button>
+                    <button className="btn btn-dark m-2 text-center">Booking: {title}</button>
                 </Link>
             </div>
         </div>
