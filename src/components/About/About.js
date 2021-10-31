@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
 import SpecialService from '../SpecialService/SpecialService';
+import SpecialServices from '../SpecislServices/SpecialServices';
 
 const About = () => {
     return (
@@ -22,7 +23,7 @@ const About = () => {
             </ul>
             <br /><br /><br />
             <hr />
-            <SpecialService></SpecialService>
+            <SpecialServices></SpecialServices>
             <br /><br /><br />
             <hr />
             <div>
